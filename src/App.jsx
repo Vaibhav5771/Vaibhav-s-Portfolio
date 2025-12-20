@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { NavBar, Dock , Welcome} from "#components";
 import { Draggable } from "gsap/Draggable";
 import { Terminal } from "#windows";
-import TerminalWindow from "#windows/Terminal.jsx";
+
 
 gsap.registerPlugin(Draggable);
 
