@@ -13,8 +13,8 @@ const Terminal = () => {
 
             <div className="techstack">
                 <p>
-                    <span className="font-bold">@vaibhav % </span>
-                    show tech stack
+                    <span className="font-bold">Vaibhav :) </span>
+                    My Tech Stack
                 </p>
 
                 {/* header row */}
@@ -48,7 +48,7 @@ const Terminal = () => {
                 <div className="footnote mt-4 text-sm">
                     <p className="flex items-center gap-2">
                         <Check size={16} />
-                        5 of 5 stacks loaded successfully (100%)
+                        7 of 7 stacks loaded successfully (100%)
                     </p>
 
                     <p className="flex items-center gap-2 text-black">

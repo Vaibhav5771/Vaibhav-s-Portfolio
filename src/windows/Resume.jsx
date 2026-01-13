@@ -6,10 +6,13 @@ import {Document, pdfjs, Page} from 'react-pdf';
 
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
+
+//Need To Change in the Final Build Version To Work Refer from tutorial
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
     'pdfjs-dist/build/pdf.worker.min.mjs',
     import.meta.url,
 ).toString();
+
 
 const Resume = () => {
     return (

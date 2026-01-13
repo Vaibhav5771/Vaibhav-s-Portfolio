@@ -1,29 +1,45 @@
 import React from "react";
 import WindowWrapper from "#hoc/windowWrapper.jsx";
-import {socials} from "#constants/index.js";
-import {WindowControls} from "#components/index.js";
+import { socials } from "#constants/index.js";
+import { WindowControls } from "#components/index.js";
 
 const Contact = () => {
     return (
         <>
             <div id="window-header">
-                <WindowControls target="contact"/>
+                <WindowControls target="contact" />
                 <h2>Contact Me</h2>
             </div>
 
             <div className="p-5 space-y-5">
-                <img src="/images/adrian.jpg" alt="Adrian"
-                className="w-20 rounded-full"
+                <img
+                    src="/images/vaibhav.jpg"
+                    alt="Vaibhav Pardeshi"
+                    className="w-20 rounded-full"
                 />
 
-                <h3>Let's Connect</h3>
-                <p>Got an idea? A bug to squash?
-                I'm in</p>
-                <p>vaibhavpardeshi@gmail.com</p>
+                <h3>Let’s Connect</h3>
+                <p>
+                    Have an idea, a project, or something to fix?
+                    I’d love to hear from you.
+                </p>
+
+                <a
+                    href="mailto:vaibhavpardeshi190@gmail.com"
+                    className="font-mono text-sm hover:underline inline-block"
+                >
+                    vaibhavpardeshi190@gmail.com
+                </a>
+
                 <ul>
-                    {socials.map(({id, bg, link, icon, text })=>(
-                        <li key={id} style={{ backgroundColor: bg}}>
-                            <a href={link} target="_blank" rel="noopener noreferrer" title={text}>
+                    {socials.map(({ id, bg, link, icon, text }) => (
+                        <li key={id} style={{ backgroundColor: bg }}>
+                            <a
+                                href={link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title={text}
+                            >
                                 <img src={icon} alt={text} className="size-5" />
                                 <p>{text}</p>
                             </a>

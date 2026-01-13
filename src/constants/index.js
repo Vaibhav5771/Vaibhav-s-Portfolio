@@ -101,61 +101,67 @@ const blogPosts = [
 
 const techStack = [
     {
+        category: "Languages",
+        items: ["Dart", "JavaScript", "Python"],
+    },
+    {
         category: "Frontend",
-        items: ["React.js", "Next.js", "TypeScript"],
+        items: ["React.js", "Next.js"],
     },
     {
         category: "Mobile",
-        items: ["React Native", "Expo"],
+        items: ["Flutter", "React Native"],
     },
     {
         category: "Styling",
-        items: ["Tailwind CSS", "Sass", "CSS"],
+        items: ["Tailwind CSS"],
     },
     {
         category: "Backend",
-        items: ["Node.js", "Express", "NestJS", "Hono"],
+        items: ["Node.js", "Express.js"],
     },
     {
-        category: "Database",
-        items: ["MongoDB", "PostgreSQL"],
+        category: "Cloud",
+        items: ["Firebase", "Supabase"],
     },
     {
-        category: "Dev Tools",
-        items: ["Git", "GitHub", "Docker"],
+        category: "Tools",
+        items: ["Git", "GitHub", "Figma"],
     },
 ];
+
 
 const socials = [
     {
         id: 1,
-        text: "Github",
+        text: "GitHub",
         icon: "/icons/github.svg",
-        bg: "#f4656b",
-        link: "https://github.com/JavaScript-Mastery-Pro",
+        bg: "#24292e",
+        link: "https://github.com/Vaibhav5771",
     },
     {
         id: 2,
-        text: "Platform",
-        icon: "/icons/atom.svg",
-        bg: "#4bcb63",
-        link: "https://jsmastery.com/",
+        text: "LinkedIn",
+        icon: "/icons/linkedin.svg",
+        bg: "#0a66c2",
+        link: "https://www.linkedin.com/in/vaibhavpardeshi21",
     },
     {
         id: 3,
-        text: "Twitter/X",
-        icon: "/icons/twitter.svg",
-        bg: "#ff866b",
-        link: "https://x.com/jsmasterypro",
+        text: "Instagram",
+        icon: "/icons/instagram.svg",
+        bg: "#e1306c",
+        link: "https://www.instagram.com/vaibhxv.57",
     },
     {
         id: 4,
-        text: "LinkedIn",
-        icon: "/icons/linkedin.svg",
-        bg: "#05b6f6",
-        link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+        text: "Email",
+        icon: "/icons/mail.svg",
+        bg: "#6b7280",
+        link: "mailto:vaibhavpardeshi190@gmail.com",
     },
 ];
+
 
 const photosLinks = [
     {
@@ -397,7 +403,7 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-10 left-5",
-            imageUrl: "/images/adrian.jpg",
+            imageUrl: "/images/vaibhav.jpg",
         },
         {
             id: 2,
@@ -425,12 +431,12 @@ const ABOUT_LOCATION = {
             fileType: "txt",
             position: "top-60 left-5",
             subtitle: "Meet the Developer Behind the Code",
-            image: "/images/adrian.jpg",
+            image: "/images/vaibhav.jpg",
             description: [
-                "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-                "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-                "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-                "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+                "Hey! I’m Vaibhav 👋, a developer who enjoys building clean, fast, and interactive web and mobile experiences that actually work well.",
+                "I specialize in Flutter, React, and JavaScript—and I love making interfaces feel smooth, responsive, and intuitive.",
+                "I’m big on clean UI, solid UX, and writing code that doesn’t require a debugging expedition to understand.",
+                "Outside of dev work, you’ll find me fine-tuning layouts late at night, experimenting with animations, or convincing myself that the next tech purchase is totally justified 😅",
             ],
         },
     ],
@@ -445,7 +451,7 @@ const RESUME_LOCATION = {
     children: [
         {
             id: 1,
-            name: "Resume.pdf",
+            name: "resume.pdf",
             icon: "/images/pdf.png",
             kind: "file",
             fileType: "pdf",
