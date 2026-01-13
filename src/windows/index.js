@@ -5,5 +5,6 @@ import Finder from '#windows/Finder.jsx';
 import TextFileWindow from '#windows/Text.jsx';
 import ImageFileWindow from '#windows/Image.jsx';
 import Contact from '#windows/Contact.jsx';
+import TrashWindow from '#windows/Trash.jsx';
 
-export { Terminal, Safari, Resume, Finder, TextFileWindow, ImageFileWindow, Contact };
+export { Terminal, Safari, Resume, Finder, TextFileWindow, ImageFileWindow, Contact, TrashWindow };

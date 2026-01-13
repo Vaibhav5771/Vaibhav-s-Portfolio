@@ -2,7 +2,8 @@ import React from 'react'
 import gsap from 'gsap';
 import {NavBar, Dock, Welcome, Home} from "#components";
 import { Draggable } from "gsap/Draggable";
-import {Terminal, Safari, Resume, Finder, TextFileWindow, ImageFileWindow, Contact} from "#windows";
+import {Terminal, Safari, Resume, Finder, TextFileWindow, ImageFileWindow, Contact, TrashWindow} from "#windows";
+
 
 
 
@@ -19,6 +20,7 @@ const App = () => {
             <Safari />
             <Resume />
             <Finder />
+            <TrashWindow />
             <TextFileWindow />
             <ImageFileWindow />
             <Contact />

@@ -61,6 +61,12 @@ const Dock = () => {
     const toggleApp = (app) => {
         if(!app.canOpen) return;
 
+        // Trash should always open (not toggle)
+        if (app.id === "trash") {
+            openWindow("trash");
+            return;
+        }
+
         const window = windows[app.id];
 
         if (!window) {
