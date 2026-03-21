@@ -67,6 +67,11 @@ const Dock = () => {
             return;
         }
 
+        if (app.id === "gallery") {
+            openWindow("gallery");
+            return;
+        }
+
         const window = windows[app.id];
 
         if (!window) {
