@@ -1,3 +1,5 @@
+import { asset } from '../utils/assetPath.js';
+
 const navLinks = [
     {
         id: 1,
@@ -19,26 +21,26 @@ const navLinks = [
 const navIcons = [
     {
         id: 1,
-        img: "/icons/wifi.svg",
+        img: asset("/icons/wifi.svg"),
     },
     {
         id: 2,
-        img: "/icons/search.svg",
+        img: asset("/icons/search.svg"),
     },
     {
         id: 3,
-        img: "/icons/user.svg",
+        img: asset("/icons/user.svg"),
     },
     {
         id: 4,
-        img: "/icons/mode.svg",
+        img: asset("/icons/mode.svg"),
     },
 ];
 
 const dockApps = [
     {
         id: "finder",
-        name: "Portfolio", // was "Finder"
+        name: "Portfolio",
         icon: "finder.png",
         canOpen: true,
     },
@@ -51,24 +53,24 @@ const dockApps = [
     {
         id: "video",
         name: "Videos",
-        icon: "quicktime.png", // add a QuickTime-style icon to your /public/icons folder
+        icon: "quicktime.png",
         canOpen: true,
     },
     {
         id: "contact",
-        name: "Contact", // or "Get in touch"
+        name: "Contact",
         icon: "contact.png",
         canOpen: true,
     },
     {
         id: "terminal",
-        name: "Skills", // was "Terminal"
+        name: "Skills",
         icon: "terminal.png",
         canOpen: true,
     },
     {
         id: "trash",
-        name: "Archive", // was "Trash"
+        name: "Archive",
         icon: "trash.png",
         canOpen: true,
     },
@@ -111,28 +113,28 @@ const socials = [
     {
         id: 1,
         text: "GitHub",
-        icon: "/icons/github.svg",
+        icon: asset("/icons/github.svg"),
         bg: "#24292e",
         link: "https://github.com/Vaibhav5771",
     },
     {
         id: 2,
         text: "LinkedIn",
-        icon: "/icons/linkedin.svg",
+        icon: asset("/icons/linkedin.svg"),
         bg: "#0a66c2",
         link: "https://www.linkedin.com/in/vaibhavpardeshi21",
     },
     {
         id: 3,
         text: "Instagram",
-        icon: "/icons/instagram.svg",
+        icon: asset("/icons/instagram.svg"),
         bg: "#e1306c",
         link: "https://www.instagram.com/vaibhxv.57",
     },
     {
         id: 4,
         text: "Email",
-        icon: "/icons/mail.svg",
+        icon: asset("/icons/mail.svg"),
         bg: "#6b7280",
         link: "mailto:vaibhavpardeshi190@gmail.com",
     },
@@ -142,27 +144,27 @@ const socials = [
 const photosLinks = [
     {
         id: 1,
-        icon: "/icons/gicon1.svg",
+        icon: asset("/icons/gicon1.svg"),
         title: "Library",
     },
     {
         id: 2,
-        icon: "/icons/gicon2.svg",
+        icon: asset("/icons/gicon2.svg"),
         title: "Memories",
     },
     {
         id: 3,
-        icon: "/icons/file.svg",
+        icon: asset("/icons/file.svg"),
         title: "Places",
     },
     {
         id: 4,
-        icon: "/icons/gicon4.svg",
+        icon: asset("/icons/gicon4.svg"),
         title: "People",
     },
     {
         id: 5,
-        icon: "/icons/gicon5.svg",
+        icon: asset("/icons/gicon5.svg"),
         title: "Favorites",
     },
 ];
@@ -170,23 +172,22 @@ const photosLinks = [
 const gallery = [
     {
         id: 1,
-        img: "/images/gal1.png",
+        img: asset("/images/gal1.png"),
     },
     {
         id: 2,
-        img: "/images/gal2.png",
+        img: asset("/images/gal2.png"),
     },
     {
         id: 3,
-        img: "/images/gal3.png",
+        img: asset("/images/gal3.png"),
     },
     {
         id: 4,
-        img: "/images/gal4.png",
+        img: asset("/images/gal4.png"),
     },
 ];
 
-// YouTube IDs extracted from project href links
 const videos = [
     {
         id: 1,
@@ -235,22 +236,21 @@ const WORK_LOCATION = {
     id: 1,
     type: "work",
     name: "Work",
-    icon: "/icons/work.svg",
+    icon: asset("/icons/work.svg"),
     kind: "folder",
     children: [
-        // ▶ Project 1
         {
             id: 5,
             name: "Clone",
-            icon: "/images/folder.png",
+            icon: asset("/images/folder.png"),
             kind: "folder",
-            position: "top-10 left-1", // icon position inside Finder
-            windowPosition: "top-[5vh] left-8", // optional: Finder window position
+            position: "top-10 left-1",
+            windowPosition: "top-[5vh] left-8",
             children: [
                 {
                     id: 1,
                     name: "clone.txt",
-                    icon: "/images/txt.png",
+                    icon: asset("/images/txt.png"),
                     kind: "file",
                     fileType: "txt",
                     position: "top-10 left-1",
@@ -267,7 +267,7 @@ const WORK_LOCATION = {
                 {
                     id: 2,
                     name: "clone.com",
-                    icon: "/images/youtube.png",
+                    icon: asset("/images/youtube.png"),
                     kind: "file",
                     fileType: "url",
                     href: "https://youtu.be/XlreyxaUylQ",
@@ -276,16 +276,16 @@ const WORK_LOCATION = {
                 {
                     id: 4,
                     name: "clone.png",
-                    icon: "/images/image.png",
+                    icon: asset("/images/image.png"),
                     kind: "file",
                     fileType: "img",
                     position: "top-10 left-80",
-                    imageUrl: "/images/project-1.png",
+                    imageUrl: asset("/images/project-1.png"),
                 },
                 {
                     id: 5,
                     name: "Design.fig",
-                    icon: "/images/figma.png",
+                    icon: asset("/images/figma.png"),
                     kind: "file",
                     fileType: "fig",
                     href: "https://www.figma.com/design/PzJP5rWDydGrnR1Tz9nAHx/Clone-Ver-2.0?t=Ge4f51USd1xOhCvg-1",
@@ -294,7 +294,7 @@ const WORK_LOCATION = {
                 {
                     id: 6,
                     name: "Idea.fig",
-                    icon: "/images/figma.png",
+                    icon: asset("/images/figma.png"),
                     kind: "file",
                     fileType: "fig",
                     href: "https://www.figma.com/design/p7gznTrl221RHAwNPZuObp/Pitch-Deck?node-id=0-1&t=9IqL6GcTVg7vpOHU-1",
@@ -302,12 +302,10 @@ const WORK_LOCATION = {
                 },
             ],
         },
-
-        // ▶ Project 2
         {
             id: 6,
             name: "CVAnalyzer",
-            icon: "/images/folder.png",
+            icon: asset("/images/folder.png"),
             kind: "folder",
             position: "top-10 left-40",
             windowPosition: "top-[20vh] left-8",
@@ -315,7 +313,7 @@ const WORK_LOCATION = {
                 {
                     id: 1,
                     name: "CVAnalyzer.txt",
-                    icon: "/images/txt.png",
+                    icon: asset("/images/txt.png"),
                     kind: "file",
                     fileType: "txt",
                     position: "top-10 left-1",
@@ -329,7 +327,7 @@ const WORK_LOCATION = {
                 {
                     id: 2,
                     name: "cvanalyzer.com",
-                    icon: "/images/youtube.png",
+                    icon: asset("/images/youtube.png"),
                     kind: "file",
                     fileType: "url",
                     href: "https://youtu.be/yr8go9OkBKg",
@@ -338,20 +336,18 @@ const WORK_LOCATION = {
                 {
                     id: 4,
                     name: "cvanalyzer.png",
-                    icon: "/images/image.png",
+                    icon: asset("/images/image.png"),
                     kind: "file",
                     fileType: "img",
                     position: "top-50 left-1",
-                    imageUrl: "/images/project-2.png",
+                    imageUrl: asset("/images/project-2.png"),
                 },
             ],
         },
-
-        // ▶ Project 3
         {
             id: 7,
             name: "SkillSync",
-            icon: "/images/folder.png",
+            icon: asset("/images/folder.png"),
             kind: "folder",
             position: "top-10 left-80",
             windowPosition: "top-[36vh] left-8",
@@ -359,7 +355,7 @@ const WORK_LOCATION = {
                 {
                     id: 1,
                     name: "SkillSync.txt",
-                    icon: "/images/txt.png",
+                    icon: asset("/images/txt.png"),
                     kind: "file",
                     fileType: "txt",
                     position: "top-10 left-1",
@@ -374,7 +370,7 @@ const WORK_LOCATION = {
                 {
                     id: 2,
                     name: "SkillSync.com",
-                    icon: "/images/youtube.png",
+                    icon: asset("/images/youtube.png"),
                     kind: "file",
                     fileType: "url",
                     href: "https://youtu.be/oj6-aHjwRRM",
@@ -383,16 +379,16 @@ const WORK_LOCATION = {
                 {
                     id: 4,
                     name: "skill-sync.png",
-                    icon: "/images/image.png",
+                    icon: asset("/images/image.png"),
                     kind: "file",
                     fileType: "img",
                     position: "top-50 left-1",
-                    imageUrl: "/images/project-3.png",
+                    imageUrl: asset("/images/project-3.png"),
                 },
                 {
                     id: 5,
                     name: "Design.fig",
-                    icon: "/images/figma.png",
+                    icon: asset("/images/figma.png"),
                     kind: "file",
                     fileType: "fig",
                     href: "https://www.figma.com/design/VDXJtBM9ReYU4FTuOE39a3/SkillSync?node-id=0-1&t=cICRpu3Uw5V76Bj5-1",
@@ -403,7 +399,7 @@ const WORK_LOCATION = {
         {
             id: 8,
             name: "Websites",
-            icon: "/images/folder.png",
+            icon: asset("/images/folder.png"),
             kind: "folder",
             position: "top-50 left-40",
             windowPosition: "top-[52vh] left-8",
@@ -411,7 +407,7 @@ const WORK_LOCATION = {
                 {
                     id: 1,
                     name: "drift-academy.live",
-                    icon: "/images/safari.png",
+                    icon: asset("/images/safari.png"),
                     kind: "file",
                     fileType: "url",
                     href: "https://heroic-tanuki-c4a092.netlify.app/",
@@ -420,7 +416,7 @@ const WORK_LOCATION = {
                 {
                     id: 2,
                     name: "drift-academy-demo.com",
-                    icon: "/images/youtube.png",
+                    icon: asset("/images/youtube.png"),
                     kind: "file",
                     fileType: "url",
                     href: "https://youtu.be/wVpnXJbTWoE",
@@ -429,7 +425,7 @@ const WORK_LOCATION = {
                 {
                     id: 3,
                     name: "macbook-pro.live",
-                    icon: "/images/safari.png",
+                    icon: asset("/images/safari.png"),
                     kind: "file",
                     fileType: "url",
                     href: "https://mac-book-pro-clone.web.app/",
@@ -438,7 +434,7 @@ const WORK_LOCATION = {
                 {
                     id: 4,
                     name: "macbook-pro-demo.com",
-                    icon: "/images/youtube.png",
+                    icon: asset("/images/youtube.png"),
                     kind: "file",
                     fileType: "url",
                     href: "https://youtu.be/NwJEKzHBrZY",
@@ -447,27 +443,27 @@ const WORK_LOCATION = {
                 {
                     id: 5,
                     name: "Drift Academy.png",
-                    icon: "/images/image.png",
+                    icon: asset("/images/image.png"),
                     kind: "file",
                     fileType: "img",
                     position: "top-50 left-40",
-                    imageUrl: "/images/project-4.png",
+                    imageUrl: asset("/images/project-4.png"),
                 },
                 {
                     id: 6,
                     name: "MacBook Pro.png",
-                    icon: "/images/image.png",
+                    icon: asset("/images/image.png"),
                     kind: "file",
                     fileType: "img",
                     position: "top-50 left-80",
-                    imageUrl: "/images/project-5.png",
+                    imageUrl: asset("/images/project-5.png"),
                 },
             ],
         },
         {
             id: 9,
             name: "SarkariRunner",
-            icon: "/images/folder.png",
+            icon: asset("/images/folder.png"),
             kind: "folder",
             position: "top-50 left-1",
             windowPosition: "top-[69vh] left-5",
@@ -475,7 +471,7 @@ const WORK_LOCATION = {
                 {
                     id: 1,
                     name: "SarkariRunner.txt",
-                    icon: "/images/txt.png",
+                    icon: asset("/images/txt.png"),
                     kind: "file",
                     fileType: "txt",
                     position: "top-10 left-1",
@@ -491,16 +487,16 @@ const WORK_LOCATION = {
                 {
                     id: 3,
                     name: "skill-sync.png",
-                    icon: "/images/image.png",
+                    icon: asset("/images/image.png"),
                     kind: "file",
                     fileType: "img",
                     position: "top-50 left-1",
-                    imageUrl: "/images/sarkarirunner.png",
+                    imageUrl: asset("/images/sarkarirunner.png"),
                 },
                 {
                     id: 4,
                     name: "Design.fig",
-                    icon: "/images/figma.png",
+                    icon: asset("/images/figma.png"),
                     kind: "file",
                     fileType: "fig",
                     href: "https://www.figma.com/design/dWR168CaBLY2rsp8GIaJoQ/Sarkari-Runner?node-id=0-1&t=tjhv39a9wvApFPAP-1",
@@ -515,27 +511,27 @@ const ABOUT_LOCATION = {
     id: 2,
     type: "about",
     name: "About me",
-    icon: "/icons/info.svg",
+    icon: asset("/icons/info.svg"),
     kind: "folder",
     children: [
         {
             id: 1,
             name: "me.png",
-            icon: "/images/image.png",
+            icon: asset("/images/image.png"),
             kind: "file",
             fileType: "img",
             position: "top-10 left-1",
-            imageUrl: "/images/vaibhav.jpg",
+            imageUrl: asset("/images/vaibhav.jpg"),
         },
         {
             id: 4,
             name: "about-me.txt",
-            icon: "/images/txt.png",
+            icon: asset("/images/txt.png"),
             kind: "file",
             fileType: "txt",
             position: "top-10 left-40",
             subtitle: "Meet the Developer Behind the Code",
-            image: "/images/gal3.png",
+            image: asset("/images/gal3.png"),
             description: [
                 "Hey! I'm Vaibhav 👋, a developer who enjoys building clean, fast, and interactive web and mobile experiences that actually work well.",
                 "I specialize in Flutter, React, and JavaScript—and I love making interfaces feel smooth, responsive, and intuitive.",
@@ -550,13 +546,13 @@ const RESUME_LOCATION = {
     id: 3,
     type: "resume",
     name: "Resume",
-    icon: "/icons/file.svg",
+    icon: asset("/icons/file.svg"),
     kind: "folder",
     children: [
         {
             id: 1,
             name: "resume.pdf",
-            icon: "/images/pdf.png",
+            icon: asset("/images/pdf.png"),
             kind: "file",
             fileType: "pdf",
             position: "top-10 left-1",
@@ -568,26 +564,26 @@ const TRASH_LOCATION = {
     id: 4,
     type: "trash",
     name: "Trash",
-    icon: "/icons/trash.svg",
+    icon: asset("/icons/trash.svg"),
     kind: "folder",
     children: [
         {
             id: 1,
             name: "trash1.png",
-            icon: "/images/image.png",
+            icon: asset("/images/image.png"),
             kind: "file",
             fileType: "img",
             position: "top-10 left-1",
-            imageUrl: "/images/trash-1.png",
+            imageUrl: asset("/images/trash-1.png"),
         },
         {
             id: 2,
             name: "trash2.png",
-            icon: "/images/image.png",
+            icon: asset("/images/image.png"),
             kind: "file",
             fileType: "img",
             position: "top-10 left-40",
-            imageUrl: "/images/trash-2.png",
+            imageUrl: asset("/images/trash-2.png"),
         },
     ],
 };

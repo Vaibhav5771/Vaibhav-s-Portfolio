@@ -13,7 +13,7 @@ const Contact = () => {
 
             <div className="p-5 space-y-5">
                 <img
-                    src="/images/vaibhav.jpg"
+                    src={`${import.meta.env.BASE_URL}images/vaibhav.jpg`}
                     alt="Vaibhav Pardeshi"
                     className="w-20 rounded-full"
                 />

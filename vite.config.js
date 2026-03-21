@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 
 
 export default defineConfig({
+    base: '/Vaibhav-s-Portfolio/',
   plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

@@ -404,16 +404,16 @@ body {
 
     #gallery {
         @apply absolute w-3xl left-40 top-20 h-[70vh]
-        bg-white shadow-2xl drop-shadow-2xl
+        bg-black shadow-2xl drop-shadow-2xl
         rounded-xl overflow-hidden flex flex-col;
     }
 
     #gallery .gallery-viewer {
-        @apply flex-1 relative bg-black;
+        @apply relative bg-black;
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 0;
+        height: calc(70vh - 55px); /* 44px = window-header height */
     }
 
     #gallery .image-container {
